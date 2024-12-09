@@ -1,0 +1,10 @@
+{
+    "name":"bajrang",
+    "age": 20,
+    "isAdmin": false,
+    "license": null,
+    "myObj": {
+        "name2": "bajrang2",
+        "age2": 23
+    }
+}
