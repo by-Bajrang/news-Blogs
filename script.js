@@ -73,7 +73,11 @@ function displayBlogs(articles) {
 (async () => {
   try {
     const articles = await fetchRandomNews();
-    displayBlogs(articles);
+    if (articles && articles.length > 0) {
+      displayBlogs(articles);
+    } else {
+      console.log("No articles found.");
+    }
   } catch (error) {
     console.error("Error fetching random news ", error);
   }
